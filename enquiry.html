@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enquiry — Sentra Firearms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Enquire about product availability or request a quote.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar container">
+    <div class="brand"><span class="dot"></span>Sentra Firearms</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" aria-current="page">Enquiry</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Product Enquiry</h1>
+
+    <form id="enquiry-form" novalidate>
+      <label for="enq-name">Full name</label>
+      <input id="enq-name" type="text" required>
+
+      <label for="enq-email">Email</label>
+      <input id="enq-email" type="email" required>
+
+      <label for="enq-product">Product</label>
+      <select id="enq-product" required>
+        <option value="">Loading products…</option>
+      </select>
+
+      <label for="enq-qty">Quantity</label>
+      <input id="enq-qty" type="number" min="1" value="1" required>
+
+      <label for="enq-urgency">Urgency</label>
+      <select id="enq-urgency">
+        <option value="normal">Normal</option>
+        <option value="express">Express (+15%)</option>
+      </select>
+
+      <input type="submit" class="btn" value="Get Quote">
+    </form>
+  </main>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
